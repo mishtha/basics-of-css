@@ -11,11 +11,16 @@
             height: 170px;
             border: 2px solid black;
         }
-        #box-1{background-color:green ;}
+        #box-1{
+            position: fixed;
+            background-color:green ;}
         #box-2{
-            /* visibility property */
-            visibility: hidden;
-            background-color: red;}
+            position: relative;
+            /* visibility property(hidden sai element hide ho jata hai jagah reserve reheti hai lekin display none sai jagah hat jata hai ) */
+            /* visibility: hidden;    will hide the element but show  empty space  */
+            /* display: none;         will hide the element and the space */
+            background-color: red;
+        }
         #box-3{background-color: blue;}
         #box-4{background-color: yellow;}
     </style>
