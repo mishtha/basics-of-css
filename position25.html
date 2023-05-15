@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3445px;
+        }
+        /* 4types position */
+        /* position:  static(default),relative,absolute, fixed,sticky */
+        .box{
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        
+        /* positon property */
+        #box3{
+            /* relative(purani position me gap lane kai liye) to its normal postion  and will leave gap at its normal position*/
+            /* position: relative;
+            top: 34px;
+            left: 34px; */
+        /* 2. absolute:(parent kai relative apni position pakad li) or relative to the pos of its first parent(container) */
+           /* position: absolute; */
+
+        /* 3. fixed: scroll ya kuch bhi karne pai box fixed rahe( position relative to the browser window) */
+        /* position: fixed;
+        right: 4px;
+        bottom: 2px;*/
+    
+        /* 4. sticky:  (scroll karne pai bhi chipka rahe) positoin relative to the  sticky*/
+        position: sticky;
+        top:3px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">Chat with us </div>
+    <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

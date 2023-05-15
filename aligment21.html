@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <!-- google sai font use karne kai liye link add -->
+    <a href="link rel="preconnect href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet"></a>
+    <style>
+     *{
+     box-sizing: border-box;
+      }
+
+      body{
+        font-family: 'Roboto', sans-serif;
+       font-family: 'Roboto Condensed', sans-serif;;
+      }
+      .container{
+        width: 900px;
+        border: 3px solid purple;
+        /* margin mtlb center me kar deta hai  */
+        margin: auto;
+        background-color: rgb(218, 205, 133);
+
+      }
+      .item{
+        border: 3px solid grey;
+        margin: 12px 3px;
+        padding: 12px 3px;
+        background: rgb(208, 178, 178);
+      /* elements(items) ko left ya right float */
+      }
+      #Fruit{
+       float:left;
+       width: 48%;
+      }
+
+      #Computer{
+        float:left;
+       width: 48%;
+      }
+
+      #Stationary{
+        /* float:left; */
+        /* float hata diya we use clear and use clear left(mtlb left wale jo overlap kar rahe mere sai mat kara so we use clear) */
+        clear:both;
+       width:100%;
+      }
+      /* text ko left right */
+      p,h3{
+        /* text-align: right; */
+        text-align: left;
+        /* text-align: center; */
+        /* text-align: justify; */
+      }
+      h1{
+        margin: 23px auto;
+        width: 455px;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="Fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, eveniet quia! Quo ipsam veritatis ratione, similique modi optio. Aliquid aperiam assumenda accusamus aut tempore? Cum placeat nulla in. Assumenda, blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum voluptas quas officia sint laboriosam? Nesciunt magnam officiis earum. Vero consequuntur architecto fuga porro repellendus! Consequatur laudantium numquam esse, molestiae natus nesciunt officia odio.</p>
+        </div>
+    
+        <div id="Computer" class="item">
+            <h3>Computers</h3>
+            <p id="Computerpara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, eveniet quia! Quo ipsam veritatis ratione, similique modi optio. Aliquid aperiam assumenda accusamus aut tempore? Cum placeat nulla in. Assumenda, blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolores delectus, corrupti quo eius ratione provident ipsum ad mollitia eaque. Sunt nulla repellat delectus hic? Magnam, architecto obcaecati saepe doloremque quibusdam porro nam similique.</p>
+        </div>
+    
+        <div id="Stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="Stationarypara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, eveniet quia! Quo ipsam veritatis ratione, similique modi optio. Aliquid aperiam assumenda accusamus aut tempore? Cum placeat nulla in. Assumenda, blanditiis!</p>
+        </div>
+
+        <div id="Glasses" class="item">
+            <h3>Stationary</h3>
+            <p id="Glassespara" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, eveniet quia! Quo ipsam veritatis ratione, similique modi optio. Aliquid aperiam assumenda accusamus aut tempore? Cum placeat nulla in. Assumenda, blanditiis!</p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        /* (* is universal selector )*/
+        *{
+            /* padding ander sai hoti haior margin bahar sai hoti hai  */
+            /* property box sizeing of border box (not change width by padding) */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #e484ea;
+        }
+      .container{vscode-file://vscode-app/c:/Users/dharm/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html
+        background-color: burlywood;
+        border: 3px solid rgb(67, 23, 131);
+        /* padding:30px; */
+        /* we can set padding top,bottom,left,right */
+        /* padding-top:79px;
+        padding-left:34px; */
+        
+        /* padding/margin = top right bottom left; */
+        /* padding: 23px, 56px, 6px, 78px; */
+        padding: 34px 19px;/* padding; y(top/bottom)x(left/right) */
+        /* padding same as margin top r l b */
+        margin: 14px 19px;
+        border-radius: 22px;
+        width: 233px;
+        /* property box sizeing of border box (not change width by padding) */
+        
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h3>This is my heading</h3>
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magni officiis minima, magnam animi dolores omnis mollitia libero nihil. Vero sed officia dicta.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magni officiis minima, magnam animi dolores omnis mollitia libero nihil. Vero sed officia dicta.</p>
+        </div>
+
+        <div class="container">
+            <h3>This is my heading</h3>
+            <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magni officiis minima, magnam animi dolores omnis mollitia libero nihil. Vero sed officia dicta.</p>
+            </div>
+</body>
+
+</html>
