@@ -12,10 +12,18 @@
             border: 2px solid black;
         }
         #box-1{
-            position: fixed;
-            background-color:green ;}
+            position: relative;
+            top:49px;
+            z-index: -115;
+            background-color:green ;
+            /* jiska z idex jayada hoga vo uper aa jayega */
+            /* z index mtlb ek kai uper ek chad gye to kya order hoga */
+            /* z-index: will worjk only for position:relative,absolute,fixedor sticky */
+        }
         #box-2{
             position: relative;
+            top: 14px;
+            z-index: -34;
             /* visibility property(hidden sai element hide ho jata hai jagah reserve reheti hai lekin display none sai jagah hat jata hai ) */
             /* visibility: hidden;    will hide the element but show  empty space  */
             /* display: none;         will hide the element and the space */
